@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/identity": "^1.5.1",
+    "@azure/storage-blob": "^12.7.0",
+    "html-to-text": "^8.0.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.18.1",
+    "remove-accents": "^0.4.2",
+    "rss-parser": "^3.12.0"
+  },
+  "devDependencies": {}
+}
