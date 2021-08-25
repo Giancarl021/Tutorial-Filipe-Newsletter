@@ -4,7 +4,7 @@ export default function () {
     const $modal = document.querySelector('#modal');
 
     function createList(items) {
-        const html = items.reduce((acc, item) => acc + `
+        const html = items.reverse().reduce((acc, item) => acc + `
             <li>
                 <h1 class="title">${item.title}</h1>
                 <h2 class="subtitle">${item.date}</h2>

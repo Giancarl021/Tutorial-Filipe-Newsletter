@@ -14,13 +14,13 @@ export default function () {
     }
 
     async function list() {
-        const items = await get('/api/list');
+        const items = await get('api/list');
 
         return items;
     }
 
     async function downloadItem(date) {
-        const blob = await getFile(`/api/get?date=${encodeURIComponent(date)}`);
+        const blob = await getFile(`api/get?date=${encodeURIComponent(date)}`);
 
         return blob;
     }

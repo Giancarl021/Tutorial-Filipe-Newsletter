@@ -40,7 +40,10 @@ module.exports = async function (context, req) {
         body: file,
         headers: {
             'Content-Disposition': `attachment; filename=${date}.wav`,
-            'Access-Control-Expose-Headers': 'Content-Disposition'
+            'Content-Type': 'audio/wav',
+            'Content-Length': file.length,
+            'Content-Range': `bytes 0-${file.length}/${file.length}`,
+            'Access-Control-Expose-Headers': 'Content-Disposition, Content-Type, Content-Length, Content-Range'
         }
     }
 
